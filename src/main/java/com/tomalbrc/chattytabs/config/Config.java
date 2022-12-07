@@ -1,4 +1,4 @@
-package com.tomalbrc.stm.config;
+package com.tomalbrc.chattytabs.config;
 
 import com.google.common.collect.ImmutableList;
 import com.google.gson.JsonElement;

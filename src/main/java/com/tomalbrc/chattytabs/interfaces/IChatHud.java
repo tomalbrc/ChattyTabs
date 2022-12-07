@@ -1,4 +1,4 @@
-package com.tomalbrc.stm.interfaces;
+package com.tomalbrc.chattytabs.interfaces;
 
 import net.minecraft.client.gui.hud.MessageIndicator;
 import net.minecraft.text.Text;

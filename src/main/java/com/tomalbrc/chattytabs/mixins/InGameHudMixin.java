@@ -1,4 +1,4 @@
-package com.tomalbrc.stm.mixins;
+package com.tomalbrc.chattytabs.mixins;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.hud.ChatHud;

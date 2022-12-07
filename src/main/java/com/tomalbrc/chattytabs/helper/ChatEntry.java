@@ -1,4 +1,4 @@
-package com.tomalbrc.stm.helper;
+package com.tomalbrc.chattytabs.helper;
 
 import net.minecraft.client.gui.hud.MessageIndicator;
 import net.minecraft.network.message.MessageSignatureData;

@@ -1,9 +1,10 @@
-package com.tomalbrc.stm.mixins;
+package com.tomalbrc.chattytabs.mixins;
 
-import com.tomalbrc.stm.gui.GuiMainMenu;
-import com.tomalbrc.stm.helper.ChatController;
-import com.tomalbrc.stm.helper.Data;
-import com.tomalbrc.stm.pattern.ChatBlockPattern;
+import com.tomalbrc.chattytabs.gui.GuiMainMenu;
+import com.tomalbrc.chattytabs.helper.ChatController;
+import com.tomalbrc.chattytabs.helper.Data;
+import com.tomalbrc.chattytabs.pattern.ChatBlockPattern;
+import com.tomalbrc.chattytabs.util.ProxyButtonWidget;
 import fi.dy.masa.malilib.gui.GuiBase;
 
 import net.minecraft.client.MinecraftClient;
@@ -26,7 +27,6 @@ import java.util.List;
 public class ChatScreenMixin extends Screen implements ButtonWidget.PressAction {
 
     private List<ButtonWidget> tabButtons = new ArrayList<>();
-
 
     @Shadow protected TextFieldWidget chatField;
     private static MinecraftClient MC = MinecraftClient.getInstance();
@@ -66,7 +66,7 @@ public class ChatScreenMixin extends Screen implements ButtonWidget.PressAction 
     private int addButton(int x, int y, String title) {
         int width = MinecraftClient.getInstance().textRenderer.getWidth(title) + 8;
 
-        ButtonWidget btn = new ButtonWidget(x, y, width, 20, Text.of(title), (ButtonWidget.PressAction) this);
+        ButtonWidget btn = new ProxyButtonWidget(x, y, width, 20, Text.of(title), (ButtonWidget.PressAction)this, null);
         this.addDrawableChild(btn);
         return x+width+2;
     }
@@ -74,7 +74,7 @@ public class ChatScreenMixin extends Screen implements ButtonWidget.PressAction 
     private int addTabButton(int x, int y, String title) {
         int width = MinecraftClient.getInstance().textRenderer.getWidth(title) + 8;
 
-        ButtonWidget btn = new ButtonWidget(x, y, width, 20, Text.of(title), (ButtonWidget.PressAction) this);
+        ButtonWidget btn = new ProxyButtonWidget(x, y, width, 20, Text.of(title), (ButtonWidget.PressAction)this, null);
         this.addDrawableChild(btn);
         tabButtons.add(btn);
         return x+width+2;

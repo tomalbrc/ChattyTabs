@@ -1,9 +1,9 @@
-package com.tomalbrc.stm.helper;
+package com.tomalbrc.chattytabs.helper;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.tomalbrc.stm.pattern.ChatBlockPattern;
+import com.tomalbrc.chattytabs.pattern.ChatBlockPattern;
 import fi.dy.masa.malilib.util.FileUtils;
 import fi.dy.masa.malilib.util.JsonUtils;
 import fi.dy.masa.malilib.util.StringUtils;

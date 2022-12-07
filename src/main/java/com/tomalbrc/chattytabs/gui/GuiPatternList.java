@@ -1,9 +1,9 @@
-package com.tomalbrc.stm.gui;
+package com.tomalbrc.chattytabs.gui;
 
-import com.tomalbrc.stm.helper.ChatController;
-import com.tomalbrc.stm.pattern.ChatBlockPattern;
-import com.tomalbrc.stm.pattern.list.WidgetListChatBlockPattern;
-import com.tomalbrc.stm.pattern.list.WidgetChatBlockPattern;
+import com.tomalbrc.chattytabs.helper.ChatController;
+import com.tomalbrc.chattytabs.pattern.ChatBlockPattern;
+import com.tomalbrc.chattytabs.pattern.list.WidgetListChatBlockPattern;
+import com.tomalbrc.chattytabs.pattern.list.WidgetChatBlockPattern;
 import fi.dy.masa.malilib.gui.GuiBase;
 import fi.dy.masa.malilib.gui.GuiListBase;
 import fi.dy.masa.malilib.gui.button.ButtonBase;

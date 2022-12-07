@@ -1,8 +1,8 @@
-package com.tomalbrc.stm.pattern.list;
+package com.tomalbrc.chattytabs.pattern.list;
 
-import com.tomalbrc.stm.gui.GuiPatternList;
-import com.tomalbrc.stm.helper.Data;
-import com.tomalbrc.stm.pattern.ChatBlockPattern;
+import com.tomalbrc.chattytabs.gui.GuiPatternList;
+import com.tomalbrc.chattytabs.helper.Data;
+import com.tomalbrc.chattytabs.pattern.ChatBlockPattern;
 import fi.dy.masa.malilib.gui.widgets.WidgetListBase;
 
 import java.util.Collection;

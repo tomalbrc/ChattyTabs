@@ -1,4 +1,4 @@
-package com.tomalbrc.stm.gui;
+package com.tomalbrc.chattytabs.gui;
 
 import fi.dy.masa.malilib.gui.GuiBase;
 import fi.dy.masa.malilib.gui.button.ButtonBase;

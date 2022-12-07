@@ -1,6 +1,6 @@
-package com.tomalbrc.stm.helper;
+package com.tomalbrc.chattytabs.helper;
 
-import com.tomalbrc.stm.pattern.ChatBlockPattern;
+import com.tomalbrc.chattytabs.pattern.ChatBlockPattern;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.hud.ChatHud;
 

@@ -1,4 +1,4 @@
-package com.tomalbrc.stm.pattern;
+package com.tomalbrc.chattytabs.pattern;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;

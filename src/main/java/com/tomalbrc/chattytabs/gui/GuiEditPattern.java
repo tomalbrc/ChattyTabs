@@ -1,7 +1,7 @@
-package com.tomalbrc.stm.gui;
+package com.tomalbrc.chattytabs.gui;
 
-import com.tomalbrc.stm.helper.Data;
-import com.tomalbrc.stm.pattern.ChatBlockPattern;
+import com.tomalbrc.chattytabs.helper.Data;
+import com.tomalbrc.chattytabs.pattern.ChatBlockPattern;
 import fi.dy.masa.malilib.gui.GuiBase;
 import fi.dy.masa.malilib.gui.GuiTextFieldGeneric;
 import fi.dy.masa.malilib.gui.button.ButtonBase;

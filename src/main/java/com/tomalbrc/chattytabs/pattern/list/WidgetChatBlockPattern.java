@@ -1,7 +1,7 @@
-package com.tomalbrc.stm.pattern.list;
+package com.tomalbrc.chattytabs.pattern.list;
 
-import com.tomalbrc.stm.gui.GuiEditPattern;
-import com.tomalbrc.stm.pattern.ChatBlockPattern;
+import com.tomalbrc.chattytabs.gui.GuiEditPattern;
+import com.tomalbrc.chattytabs.pattern.ChatBlockPattern;
 import fi.dy.masa.malilib.gui.GuiBase;
 import fi.dy.masa.malilib.gui.button.ButtonBase;
 import fi.dy.masa.malilib.gui.button.ButtonGeneric;
@@ -10,13 +10,11 @@ import fi.dy.masa.malilib.gui.widgets.WidgetListEntrySortable;
 import fi.dy.masa.malilib.render.RenderUtils;
 import net.minecraft.client.util.math.MatrixStack;
 
-import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class WidgetChatBlockPattern extends WidgetListEntrySortable<ChatBlockPattern> {
 
-    @Nullable
     private final ChatBlockPattern entry;
 
     private final int buttonsStartX;
@@ -26,7 +24,7 @@ public class WidgetChatBlockPattern extends WidgetListEntrySortable<ChatBlockPat
     public final WidgetListChatBlockPattern parent;
 
     public WidgetChatBlockPattern(int x, int y, int width, int height, boolean isOdd,
-                                  List<ChatBlockPattern> patternList, @Nullable ChatBlockPattern entry, int listIndex, WidgetListChatBlockPattern parent) {
+                                  List<ChatBlockPattern> patternList, ChatBlockPattern entry, int listIndex, WidgetListChatBlockPattern parent) {
         super(x, y, width, height, entry, listIndex);
         this.entry = entry;
         this.parent = parent;

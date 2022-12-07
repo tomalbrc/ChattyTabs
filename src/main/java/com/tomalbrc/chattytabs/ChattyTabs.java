@@ -1,7 +1,7 @@
 package com.tomalbrc.chattytabs;
 
 import net.fabricmc.api.ModInitializer;
-import com.tomalbrc.stm.helper.Data;
+import com.tomalbrc.chattytabs.helper.Data;
 
 public class ChattyTabs implements ModInitializer {
     @Override
