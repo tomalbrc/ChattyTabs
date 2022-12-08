@@ -38,7 +38,7 @@ public class ChatController {
         List<ChatEntry> list = new ArrayList<>();
 
         if (ChatController.INSTANCE.currentPattern == null) { // All entries!
-            list = ChatController.INSTANCE.chatEntries;
+            list = new ArrayList<>(ChatController.INSTANCE.chatEntries);
         }
         else {
             for (ChatEntry item: ChatController.INSTANCE.chatEntries) {

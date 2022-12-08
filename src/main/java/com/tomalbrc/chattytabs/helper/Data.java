@@ -53,7 +53,7 @@ public class Data {
         {
             JsonObject root = element.getAsJsonObject();
 
-            JsonArray arr = root.get("patterns").getAsJsonArray();
+            JsonArray arr = root.get("list").getAsJsonArray();
             final int size = arr.size();
 
             for (int i = 0; i < size; ++i) {
@@ -65,7 +65,7 @@ public class Data {
         }
 
         if (list.isEmpty()) {
-            list.add(new ChatBlockPattern("has test", Pattern.compile(".*test.*"), true, true));
+            list.add(new ChatBlockPattern("example", Pattern.compile(".*test.*"), true, true));
         }
 
         Data.INSTANCE.patternList = list;
@@ -78,7 +78,7 @@ public class Data {
 
     private static File getStorageFile(boolean globalData)
     {
-        File dir = new File(FileUtils.getConfigDirectory(), "StopTheMadness");
+        File dir = new File(FileUtils.getConfigDirectory(), "ChattyTabs");
 
         if (dir.exists() == false && dir.mkdirs() == false)
         {
@@ -87,7 +87,7 @@ public class Data {
 
         System.out.println(dir.toString());
 
-        return new File(dir, StringUtils.getStorageFileName(globalData, "StopTheMadness" + "_", ".json", "default"));
+        return new File(dir, StringUtils.getStorageFileName(globalData, "ChattyTabs" + "_", ".json", "default"));
     }
 
     public static List<ChatBlockPattern> getBlockPatternList() {
