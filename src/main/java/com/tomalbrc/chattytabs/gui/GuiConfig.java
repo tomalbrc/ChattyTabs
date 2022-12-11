@@ -70,8 +70,8 @@ public class GuiConfig extends GuiConfigsBase
 
         switch (currentTab) {
             case GENERIC -> list = ConfigOptionWrapper.createFor(Config.Generic.OPTIONS);
-            case BLOCKLIST -> list = new ArrayList();
-            default -> list = new ArrayList();
+            case BLOCKLIST -> list = new ArrayList<>();
+            default -> list = new ArrayList<>();
         }
 
         return list;
